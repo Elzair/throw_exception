@@ -8,3 +8,5 @@ target_include_directories(boost_throw_exception BEFORE INTERFACE ${CMAKE_CURREN
 
 install(TARGETS boost_throw_exception DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::throw_exception ALIAS boost_throw_exception)
